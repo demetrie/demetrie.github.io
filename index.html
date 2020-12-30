@@ -1,15 +1,311 @@
   <!DOCTYPE html>
   <html>
+
+<head>
+
+<link rel="stylesheet" href="https://assets.design.digital.engie.com/fluid/latest/fluid-design-system.css" crossorigin="anonymous">
+<!-- Scripts -->
+<script src="https://assets.design.digital.engie.com/fluid/latest/fluid-design-system.js" crossorigin="anonymous"></script>
+<script src="https://assets.design.digital.engie.com/fluid/latest/auto-init.js" crossorigin="anonymous"></script>
+
+</head>
+
   <body>
 
-  <h1>Hello Chart</h1>
-  <div style="max-width: 500px">
-
-    
-    <iframe width="100%" height="1047" frameborder="0"
-      src="https://observablehq.com/embed/@martindaniel4/greenhouse-gas-emissions-by-country-and-sector?cell=chart"></iframe>
-
-    </div>
+    () => {
+        useEffect(() => {
+          NJ.AutoInit();
+        }, []);
+        return `
+        <!-- Header -->
+        <!-- <use href="${logoFile}#logo-engie" /> -->
+         <header class="nj-header nj-header--fixed nj-header--scroll-sm nj-header--expand-lg">
+          <div class="nj-header__group">
+            <div class="nj-header__head">
+              <div>
+                <a href="#" class="nj-header__head-link">EN</a> /
+                <a href="#" class="nj-header__head-link nj-header__head-link--active">FR</a>
+              </div>
+              <a href="#" class="nj-header__logo">
+               <img src="https://assets.design.digital.engie.com/brand/logo-engie-blue.svg" alt="ENGIE" width="133" height="48">
+              </a>
+              <a href="" class="nj-header__head-link">Espace client</a>
+            </div>
+            <hr class="m-0">
+            <nav class="container" role="navigation">
+             <div class="nj-header__nav-burger" aria-label="menu" aria-expanded="false"><button><div></div></button></div>
+             <div class="nj-header__nav-logo--reduced">
+               <a href="#">
+                <img src="https://assets.design.digital.engie.com/brand/logo-engie-small-blue.svg" alt="ENGIE" width="31" height="32">
+               </a>
+             </div>
+             <ul class="nj-header__nav nj-header__nav--panel">
+                <li class="nj-header__nav-item active"><a class="nj-header__nav-link" href="#">Accueil</a></li>
+                <li class="nj-header__nav-item"><a class="nj-tag nj-tag--filled-green-java" href="#">News</a></li>
+                <li class="nj-header__nav-item"><a class="nj-header__nav-link" href="#">Act with ENGIE</a></li>
+                <li class="nj-header__nav-item"><a class="nj-header__nav-link" href="#">Group</a></li>
+                <li class="nj-header__nav-item">
+                  <a class="nj-header__nav-link" href="#">Activities <i class="nj-header__menu-arrow-right material-icons md-24">keyboard_arrow_right</i></a>
+                  <div class="nj-header__menu nj-header__nav--panel">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <a class="nj-header__menu-return"><i class="nj-header__menu-arrow-left material-icons md-24">keyboard_arrow_left</i> Activities</a>
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href="#" class="nj-header__menu-title" aria-label="open" aria-expanded="false">Renouvelables <i class="nj-header__menu-arrow-right material-icons md-24">keyboard_arrow_right</i></a>
+                              <ul class="list-unstyled nj-header__nav--panel">
+                                <li><a class="nj-header__menu-return"><i class="nj-header__menu-arrow-left material-icons md-24">keyboard_arrow_left</i>Renouvelables</a></li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/eolien">Éolien</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/solaire">Solaire</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/geothermie">Géothermie</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/biogaz">Biogaz</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/biomasse">Biomasse</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/hydrogene-vert">Hydrogène vert</a>
+                                </li>
+                                <li>
+                                  <a class="nj-header__menu-link" href="/activites/renouvelables/hydroelectricite">Hydroélectricité</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-unstyled">
+                          <li>
+                         <a href="#" class="nj-header__menu-title" aria-label="open" aria-expanded="false">Solutions clients <i class="nj-header__menu-arrow-right material-icons md-24">keyboard_arrow_right</i></a>
+                          <ul class="list-unstyled nj-header__nav--panel">
+                            <li>
+                              <a class="nj-header__menu-return"><i class="nj-header__menu-arrow-left material-icons md-24">keyboard_arrow_left</i>Solutions clients</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/eolien">Éolien</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/solaire">Solaire</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/geothermie">Géothermie</a>
+                            </li>
+                          </ul>
+                            </li></ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-unstyled">
+                          <li>
+                         <a class="nj-header__menu-title" href="#" aria-label="open" aria-expanded="false">Thermique <i class="nj-header__menu-arrow-right material-icons md-24">keyboard_arrow_right</i></a>
+                          <ul class="list-unstyled nj-header__nav--panel">
+                           <li>
+                              <a class="nj-header__menu-return"><i class="nj-header__menu-arrow-left material-icons md-24">keyboard_arrow_left</i>Thermique</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/eolien">Centrales thermiques</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/solaire">Nucléaire</a>
+                            </li>
+                            <li>
+                              <a class="nj-header__menu-link" href="/activites/renouvelables/geothermie">Gaz</a>
+                            </li>
+                          </ul>
+                          </li></ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nj-header__nav-item"><a class="nj-header__nav-link" href="#">Other item</a></li>
+                <li class="nj-header__nav-item"><a class="nj-header__nav-link" href="#">Other item</a></li>
+              </ul>
+               <a class="nj-header__search-icon" data-toggle="collapse" data-target="#collapse-search-bar-header" aria-expanded="false" aria-controls="collapse-search-bar-header"><i class="material-icons md--blue-corporate">search</i></a>
+               <form class="nj-header__search nj-collapse" id="collapse-search-bar-header" style="">
+                         <input class="nj-form-control mr-3" type="text" id="search-header" placeholder="Enter your query...">
+                         <button type="submit" class="nj-btn nj-btn--primary flex-keep">Search</button>
+                         <a data-target="#collapse-search-bar-header" class="nj-header__close ml-2 d-inline-flex" aria-label="Close" data-toggle="collapse">
+                           <i class="material-icons md--blue-corporate">close</i>
+                         </a>
+               </form>
+            </nav>
+          </div>
+        </header>
+        <!-- Content -->
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="nj-breadcrumb">
+              <li class="nj-breadcrumb__item"><a href="#" class="nj-breadcrumb__link">Home</a></li>
+              <li class="nj-breadcrumb__item"><a href="#" class="nj-breadcrumb__link">Energies</a></li>
+              <li class="nj-breadcrumb__item" aria-current="page">Solar Energy</li>
+            </ol>
+          </nav>
+          <h1 class="h2 mb-5">Green energy</h1>
+          <div class="row">
+            <div class="col-12">
+              <!-- First card -->
+              <!-- https://www.engie.com/sites/default/files/assets/images/2019-11/page_client_territoires.jpg -->
+              <div class="nj-card mb-3">
+                <img class="nj-card__img nj-card__img--top" src="https://www.engie.com/sites/default/files/assets/images/2019-11/page_client_territoires.jpg" alt="Card image"/>
+                <div class="nj-card__body">
+                  <h4 class="nj-card__title">Card title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem, consequuntur dolorum eius,
+                    expedita illo minus molestias natus pariatur perferendis, sed tenetur! Cumque magnam qui quis, sequi
+                    similique suscipit voluptas.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="nj-card mb-3">
+                  <img class="nj-card__img nj-card__img--top" src="https://assets.design.digital.engie.com/image/img-generic.jpg" alt="Card image"/>
+                  <div class="nj-card__body">
+                    <h4 class="nj-card__title">Card title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem, consequuntur dolorum eius,
+                      expedita illo minus molestias natus pariatur perferendis, sed tenetur! Cumque magnam qui quis, sequi
+                      similique suscipit voluptas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="nj-card mb-3">
+                  <img class="nj-card__img nj-card__img--top" src="https://assets.design.digital.engie.com/image/img-generic.jpg" alt="Card image"/>
+                  <div class="nj-card__body">
+                    <h4 class="nj-card__title">Card title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem, consequuntur dolorum eius,
+                      expedita illo minus molestias natus pariatur perferendis, sed tenetur! Cumque magnam qui quis, sequi
+                      similique suscipit voluptas.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row my-5">
+            <div class="col text-center">
+              <button type="button" class="nj-btn nj-btn--primary" data-toggle="modal" data-target="#exampleModal">
+                Info modal
+              </button>
+              <div class="nj-modal fade" tabindex="-1" id="exampleModal" role="dialog">
+                <div class="nj-modal__dialog" role="document">
+                  <div class="nj-modal__content">
+                    <div class="nj-modal__header">
+                      <h4 class="nj-modal__title" id="exampleModalLabel">Info modal</h4>
+                      <button type="button" class="nj-modal__close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons close-icon">close</i>
+                      </button>
+                    </div>
+                    <div class="nj-modal__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+                    </div>
+                    <div class="nj-modal__footer">
+                      <button type="button" class="nj-btn nj-btn--outline-primary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="nj-btn nj-btn--primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+              <div class="col-12 mb-4">
+                <div class="nj-card nj-card--horizontal">
+                    <img class="nj-card__img" src="https://design.engie.com/assets/img/img-generic.jpg" alt="Card image cap"/>
+                    <div class="nj-card__body d-flex">
+                      <div class="mb-1">
+                        <div class="nj-tag nj-tag--filled-blue-corporate"><span class="nj-tag__text">tag</span></div>
+                        <div class="nj-tag nj-tag--filled-green-java"><span class="nj-tag__text">tag</span></div>
+                      </div>
+                      <h4 class="nj-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                      <div class="nj-card__date">15/04/2020</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="#" class="nj-card nj-card--horizontal">
+                  <img class="nj-card__img" src="https://design.engie.com/assets/img/img-generic.jpg" alt="Card image cap"/>
+                  <div class="nj-card__body d-flex">
+                    <h4 class="nj-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class="nj-card__date">15/04/2020</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="#" class="nj-card nj-card--horizontal">
+                  <img class="nj-card__img" src="https://design.engie.com/assets/img/img-generic.jpg" alt="Card image cap"/>
+                  <div class="nj-card__body d-flex">
+                    <h4 class="nj-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class="nj-card__date">15/04/2020</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 mb-4">
+                <a href="#" class="nj-card nj-card--horizontal">
+                  <img class="nj-card__img" src="https://design.engie.com/assets/img/img-generic.jpg" alt="Card image cap"/>
+                  <div class="nj-card__body d-flex">
+                    <h4 class="nj-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                    <div class="nj-card__date">15/04/2020</div>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+            <nav aria-label="Page navigation example">
+                <ul class="nj-pagination justify-content-center">
+                  <li class="nj-pagination__item">
+                    <a class="nj-pagination__link nj-pagination__link--prev" href="#" aria-label="Previous">
+                      <i class="nj-pagination__nav material-icons">chevron_left</i>
+                    </a>
+                  </li>
+                  <li class="nj-pagination__item"><a class="nj-pagination__link" href="#" aria-label="Page 1">1</a></li>
+                  <li class="nj-pagination__item"><a class="nj-pagination__link" href="#" aria-label="Page 2">2</a></li>
+                  <li class="nj-pagination__item nj-pagination__item--active"><a class="nj-pagination__link" href="#" aria-label="Page 3">3</a></li>
+                  <li class="nj-pagination__item"><a class="nj-pagination__link" href="#" aria-label="Page 4">4</a></li>
+                  <li class="nj-pagination__item"><a class="nj-pagination__link" href="#" aria-label="Page 5">5</a></li>
+                  <li class="nj-pagination__item">
+                    <a class="nj-pagination__link nj-pagination__link--next" href="#" aria-label="Next">
+                      <i class="nj-pagination__nav material-icons">chevron_right</i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="nj-footer">
+          <div class="container">
+            <div class="nj-footer__baseline">
+              <img src="https://assets.design.digital.engie.com/brand/logo-engie-blue.svg" alt="ENGIE" width="134px" height="48px" class="nj-footer__logo">
+              <div>Energy is our future, save it.</div>
+            </div>
+            <hr>
+            <ul class="nj-footer__links">
+              <li><a href="#" class="nj-footer__link">Sitemap</a></li>
+              <li><a href="#" class="nj-footer__link">Join-us</a></li>
+              <li><a href="#" class="nj-footer__link">Terms of use</a></li>
+              <li><a href="#" class="nj-footer__link">Personnal data</a></li>
+              <li><a href="#" class="nj-footer__link">Mediator</a></li>
+            </ul>
+            <ul class="nj-footer__social">
+              <li><a href="#" class="nj-footer__social-link"><img src="https://assets.design.digital.engie.com/icons/social/facebook.svg" alt="Facebook" class="nj-footer__social-icon"></a></li>
+              <li><a href="#" class="nj-footer__social-link"><img src="https://assets.design.digital.engie.com/icons/social/twitter.svg" alt="Twitter" class="nj-footer__social-icon"></a></li>
+              <li><a href="#" class="nj-footer__social-link"><img src="https://assets.design.digital.engie.com/icons/social/linkedin.svg" alt="Linkedin" class="nj-footer__social-icon"></a></li>
+              <li><a href="#" class="nj-footer__social-link"><img src="https://assets.design.digital.engie.com/icons/social/instagram.svg" alt="Instagram" class="nj-footer__social-icon"></a></li>
+              <li><a href="#" class="nj-footer__social-link"><img src="https://assets.design.digital.engie.com/icons/social/youtube.svg" alt="Youtube" class="nj-footer__social-icon"></a></li>
+            </ul>
+          </div>
+        </footer>
+        `;
+      }
 
   </body>
   </html>
