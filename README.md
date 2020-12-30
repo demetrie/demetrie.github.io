@@ -26,4 +26,4 @@ Create an Engie themed static page with an observable graph (maybe more than one
 
 hi sonam, now we're in PAGES
 
-hi demetrie, yay!
+Hi demetrie
